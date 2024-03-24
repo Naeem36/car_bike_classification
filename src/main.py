@@ -1,3 +1,10 @@
+import torch
+
+from src.data_preprocessing import DataPreprocessor
+from src.train import train_model
+from src.valid import evaluate_model
+
+
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     data_dir = 'data'

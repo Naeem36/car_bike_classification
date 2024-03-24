@@ -1,4 +1,7 @@
 import matplotlib.pyplot as plt
+import torch
+from matplotlib import transforms
+
 
 def predict_image(model, image_path, device):
     transform = transforms.Compose([
