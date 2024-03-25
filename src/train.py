@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
+from src.model import CarBikeClassifier
+
 
 def train_model(data_loaders, num_epochs, device):
     model = CarBikeClassifier(num_classes=2).to(device)

@@ -7,7 +7,7 @@ from src.valid import evaluate_model
 
 def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    data_dir = 'data'
+    data_dir = r'C:\Users\Naeem\Desktop\car_bike_classification\data'
     batch_size = 32
     image_size = 224
     num_epochs = 2
