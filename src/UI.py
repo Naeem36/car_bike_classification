@@ -2,7 +2,9 @@ import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
 import torch
-from predict import predict_image, CarBikeClassifier
+from src import model
+from model import CarBikeClassifier
+from predict import predict_image
 
 app = tk.Tk()
 app.geometry("750x750")
@@ -16,7 +18,7 @@ def select_file():
     global image_file
     image_file = filename
     img = Image.open(filename)
-    img.thumbnail((300, 400))  # Resize the image to fit in the UI
+    img.thumbnail((300, 400))
     img = ImageTk.PhotoImage(img)
     image_label.configure(image=img)
     image_label.image = img
@@ -33,7 +35,7 @@ image_label = tk.Label(app, bg="white")
 image_label.place(relx=0.5, rely=0.3, anchor="center")
 
 upload_button = tk.Button(app, text="upload", command=select_file, bg="black", fg="white", font=("Helvetica", 12, "bold"))
-upload_button.place(relx=0.4, rely=0.9, anchor="center")
+upload_button.place(relx=0.5, rely=0.9, anchor="center")
 
 classify_button = tk.Button(app, text="Classify", command=classify, bg="indigo", fg="white", font=("Helvetica", 12, "bold"))
 classify_button.place(relx=0.6, rely=0.9, anchor="center")
