@@ -30,8 +30,5 @@ This software gets an image from the user and cassifies it as bike or car. The u
 - Click upload to choose image
 - Click classify to see the result 
 
-## Sample output:
-
-![[output.jpg]]
 
 
