@@ -5,7 +5,7 @@ import torch
 from predict import predict_image, CarBikeClassifier
 
 app = tk.Tk()
-app.geometry("900x700")
+app.geometry("750x750")
 app.configure(bg="lightgray")
 
 def select_file():
@@ -32,11 +32,11 @@ def classify():
 image_label = tk.Label(app, bg="white")
 image_label.place(relx=0.5, rely=0.3, anchor="center")
 
-choose_file_button = tk.Button(app, text="Choose file", command=select_file, bg="black", fg="white", font=("Helvetica", 12, "bold"))
-choose_file_button.place(relx=0.5, rely=0.9, anchor="center")
+upload_button = tk.Button(app, text="upload", command=select_file, bg="black", fg="white", font=("Helvetica", 12, "bold"))
+upload_button.place(relx=0.4, rely=0.9, anchor="center")
 
 classify_button = tk.Button(app, text="Classify", command=classify, bg="indigo", fg="white", font=("Helvetica", 12, "bold"))
-classify_button.place(relx=0.7, rely=0.9, anchor="center")
+classify_button.place(relx=0.6, rely=0.9, anchor="center")
 
 result_label = tk.Label(app, text="", bg="lightblue", font=("Helvetica", 12))
 result_label.place(relx=0.5, rely=0.1, anchor="center")

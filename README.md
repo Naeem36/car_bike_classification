@@ -2,44 +2,35 @@
 classifies car or bike based on a given image
 
 
-# Usage
+# Description
+This software gets an image from the user and cassifies it as bike or car. The user interface is very simple. It has an upload button and classifiy button. User has to upload a photo of car or bike from the locar device using upload button and pressing the classify button will generate the output of the classifieer and it will be showed above the picture.
 
-## Organize training,evaluation and test data
-Dataset:
+#Technologies Used
+1. Anaconda Navigator
+2. Pychrm Commuity Edition
+3. torch
+4. torchvison
+5. tkinter
+6. PIL
+
+## Dataset:
+
 [Car Vs Bike  Dataset](https://www.kaggle.com/datasets/utkarshsaxenadn/car-vs-bike-classification-dataset)
 
-    - Create "data" directory
-    - Create train, evaluation and test directory
-    - Inside each of 3 directories, create 2 directories named "Bike" and "Car"
-    - Split all of Car and Bike images into 3 directories collected from the dataset(only the jpeg images)
 
-## Install the necessary python packages:
+## Python Packages Version:
+1. customtkinter 5.2.2
+2. pip 24.0
+3. torch 2.2.1
+4. torchvision 0.17.1
 
-```bash
-pip install torch torchvision customtkinter
-```
 
-## Run main.py and train the model:
+## User Instruction
+- Run UI.py
+- Click upload to choose image
+- Click classify to see the result 
 
-```python
-python src/main.py
-```
-It'll take some time to complete the training.
-
-## Run the UI and classify images
-### Change directory to src/
-```bash
-cd src/
-```
-### Run the UI
-```python
-python ui.py
-```
-Select the file:
-Click -> choose file 
-
-See output:
-Click -> classify
+## Sample output:
 
 ![[output.jpg]]
 
