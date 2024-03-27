@@ -1,4 +1,4 @@
-# car_bike_classification
+# Car_Bike_Classification
 classifies car or bike based on a given image
 
 
@@ -33,4 +33,5 @@ This software gets an image from the user and cassifies it as bike or car. The u
 ## Sample output:
 
 ![[output.jpg]]
+
 
