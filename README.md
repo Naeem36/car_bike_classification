@@ -11,7 +11,7 @@ This software gets an image from the user and cassifies it as bike or car. The u
 3. torch
 4. torchvison
 5. tkinter
-6. PIL
+6. pillow
 
 ## Dataset:
 
@@ -23,6 +23,7 @@ This software gets an image from the user and cassifies it as bike or car. The u
 2. pip 24.0
 3. torch 2.2.1
 4. torchvision 0.17.1
+3. pillow 10.2.0
 
 
 ## User Instruction
