@@ -35,7 +35,7 @@ image_label = tk.Label(app, bg="white")
 image_label.place(relx=0.5, rely=0.3, anchor="center")
 
 upload_button = tk.Button(app, text="upload", command=select_file, bg="black", fg="white", font=("Helvetica", 12, "bold"))
-upload_button.place(relx=0.5, rely=0.9, anchor="center")
+upload_button.place(relx=0.4, rely=0.9, anchor="center")
 
 classify_button = tk.Button(app, text="Classify", command=classify, bg="indigo", fg="white", font=("Helvetica", 12, "bold"))
 classify_button.place(relx=0.6, rely=0.9, anchor="center")
